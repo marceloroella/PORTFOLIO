@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothinhg: grayscale;
+
+}
+
+p{
+    font-family: 'Open Sans', serif;
+}
+
+@keyframes dashAnim {
+   0%{
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1500;
+        fill:transparent;
+    }
+    
+    50%{
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 0;
+        
+
+    }
+
+    100%{
+ stroke-dasharray: 1000;
+        stroke-dashoffset: 1500;
+        fill:transparent;    }
+    
+}
+
+/* MEDIA QUERIES 
+codigo cor laranja: ff4800  
+*/
+
+@media screen and (min-width: 320px){
+
+   /* MENU */
+
+   .kj-page-wrapper, .kj-preloader{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-color: #1C1C1C;
+    border: 30px solid #000; 
+}
+
+.kj-preloader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.st0{
+    fill:transparent;
+    stroke:rgb(79, 3, 61);
+    stroke-width:4;
+    stroke-miterlimit:10;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 100;
+    animation: dashAnim 3s linear infinite;
+}
+
+.kj-topbar{
+    width: 100%;
+    height: 110px;
+    display: block;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.kj-logo{
+    width: 74px;
+    height: 110px;
+    float: left;
+    margin-left: 60px;
+    background-color: darkolivegreen;
+    border-radius: 0 0 37px 0;
+    transition: all 0.2s ease-out;
+    
+}
+
+.kj-logo:hover{
+    height: 120px;
+}
+
+.kj-logo img{
+    width: 47px;
+    height: 31px;
+    display: block;
+    margin:55px auto 0 ;
+}
+
+.kj-menu{
+    display: none;
+}
+
+/* INFO */
+
+.kj-btn-contact{
+    width: 45px;
+    height: 45px;
+    display:block;
+    background-color: darkolivegreen;
+    background-image: url('../images/icon-contact-close.svg');
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    border-radius: 50%;
+    z-index: 200;
+    transition: all 0.2s ease-out;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.kj-contact-info{
+    width: 245px;
+    height: 165px;
+    background-color: rgb(18, 17, 17);
+    padding: 25px;
+    position: fixed;
+    bottom: 115px;
+    z-index: 200;
+    right: 65px;
+    display: none;
+}
+
+
+
+    
+
+}
+
+
+@media screen and (min-width: 576px){
+    
+}
+
+
+@media screen and (min-width: 768px){
+    
+}
+
+
+@media screen and (min-width: 992px){
+
+   /* MENU */
+   
+   .kj-menu{
+    display: table;
+    float: left;
+    height: 110px;
+    margin-left: 30px;
+    background-color: transparent;
+ }
+
+ .kj-menu a {
+     text-decoration: none;
+     font-family: 'Open Sans';
+     color: #BCBCBC;
+     font-size: 16px;
+     display: inline-block;
+     margin: 50px 20px 0 20px;
+     font-weight: 400;
+     position: relative;
+
+
+ }
+
+ .kj-menu a:first-child{
+     margin-left: 0;
+ }
+
+ .kj-menu a:hover{
+ color: rgb(162, 165, 156);
+ }
+
+ .kj-menu a:before{
+     content: '';
+     width: 0;
+     height: 4px;
+     background-color: darkolivegreen;
+     display: block;
+     position: absolute;
+     bottom: -6px;
+     left: 0;
+     transition: all 0.3s ease-out; 
+ }
+
+ .kj-menu a:hover:before{
+     width: 100%;
+ }
+
+ .kj-SL{
+     width: 100%;
+     height: 45px;
+     display: block;
+ }
+
+ .kj-social{
+     width: 45px ;
+     height: 45pxs;
+     display: inline-block;
+     position: relative;
+     left: -10px;
+ }
+
+ .kj-social > img{
+     width: 20px;
+     height: auto;
+     display: block;
+     margin: 12px auto 0 ;
+
+ }
+ 
+ 
+
+/* INFO */
+
+
+}
+
+
+@media screen and (min-width: 1200px){
+    
+}
+
+
+@media screen and (min-width: 1364px){
+    
+}
+
+
+@media screen and (min-width: 1600px){
+    
+}
+
+/* CL ULT */
+
+.kj-title{
+    font-family: 'Abril FatFace', serif;
+    font-weight: 400;
+}
+
+.kj-text-green{
+    color: darkolivegreen;
+}
+
+.kj-text-grey{
+    color: #BCBCBC;
+}
+
+.kj-mar-15{
+    margin: 15px;
+}
+
+.kj-mar-top-15{
+    margin-top: 15px;
+}
+
+.kj-mar--left-15{
+    margin-left: 15px;
+}
+
+.kj-mar-right-15{
+    margin-right: 15px;
+}
+
+.kj-mar-bottom-15{
+    margin-bottom: 15px;
+}
+
+.kj-padd-15{
+    padding: 15px;
+}
+
+.kj-padd-top-15{
+    padding-top: 15px;
+}
+
+.kj-padd--left-15{
+    padding-left: 15px;
+}
+
+.kj-padd-right-15{
+    padding-right: 15px;
+}
+
+.kj-padd-bottom-15{
+    padding-bottom: 15px;
+}
+/* CL COMP */
+
+.kj-is-open{
+    display: block;
+
+}
+
+.kj-change-icon{
+    background-position-y: -45px;
+}
+
