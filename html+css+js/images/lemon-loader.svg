@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/css" href="../css/main.css"?>
 <!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="395.8px" height="380.2px" viewBox="0 0 395.8 380.2" style="enable-background:new 0 0 395.8 380.2;" xml:space="preserve"
 	>
+<style type="text/css">
+    @keyframes lineGrow{
+		to{
+			stroke-dashoffset: 0 ;
+		}
 
+	}
+
+	.st0{
+		fill:none;
+	    stroke:#2CCB69;
+		stroke-width:16;
+		stroke-miterlimit:10;
+		stroke-dasharray: 1500;
+		stroke-dashoffset: 1500;
+		animation: lineGrow  2s infinite ease-out; 
+		}
+</style>
 <g>
 	<g>
 		<path class="st0" d="M375.8,179.1C395.3,84.8,329.6,8.2,228.9,8C128.3,7.8,30.9,84.1,11.4,178.4s46.3,170.9,146.9,171.1
