@@ -77,20 +77,18 @@ codigo cor laranja: ff4800
     display: table;
     background-color: #1C1C1C;
     border: 30px solid #000; 
+    
 }
 
-.kj-preloader{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-
+.kj-page-wrapper{
+    background-image: url('../images/shang-chi.png');
+    background-repeat: no-repeat;
+    background-size: 40% 40%;
+    background-position: 85% 5% ;
+    
 }
+
+
 
 
 
@@ -109,7 +107,7 @@ codigo cor laranja: ff4800
     height: 110px;
     float: left;
     margin-left: 60px;
-    background-color: darkolivegreen;
+    background-color: orange;
     border-radius: 0 0 37px 0;
     transition: all 0.2s ease-out;
     
@@ -136,7 +134,7 @@ codigo cor laranja: ff4800
     width: 45px;
     height: 45px;
     display:block;
-    background-color: darkolivegreen;
+    background-color: orange;
     background-image: url('../images/icon-contact-close.svg');
     background-repeat: no-repeat;
     position: fixed;
@@ -169,17 +167,11 @@ codigo cor laranja: ff4800
     margin-top: 10%;
 }
 
-#kj-home-prstntn{
-    background-image: url('../images/shang-chi.png');
-    background-repeat: no-repeat;
-    background-position: 80% bottom;
-    position: relative;
-}
 .kj-scrow-down{
     width: 70px;
     height: 105px;
     border-radius: 35px 35px 0 0;
-    background-color: darkolivegreen;
+    background-color: orange;
     display: block;
     position: absolute;
     bottom: 0;
@@ -223,6 +215,64 @@ codigo cor laranja: ff4800
     transform-origin: top center;
     animation: linedown 1s infinite linear;
 }
+
+/*--------HOME-PORTFOLIO-------*/
+    .kj-portfolio-navigator{
+        width: 145px;
+        height: 400px;
+        display: table;
+        left: 15px;
+        position: absolute;
+        top: 25vh;
+    }
+
+    .kj-item-counter{
+        width: 100%;
+        height: 90px;
+        display: block;
+        margin-bottom: 60px;
+        position: relative;
+    }
+
+    .kj-item-counter:before{
+        content: '';
+        display: block;
+        width: 35px;
+        height: 100%;
+        background-color: #1C1C1C;
+        position: absolute;
+        top: 40px;
+    }
+
+    .kj-item-counter span{
+        font-family: 'Open Sans', 'sans-serif';
+        font-size: 120px;
+        font-weight: 600;
+    }
+    
+
+    .kj-item-navgator{
+        width: 100%;
+        display: table;
+    }
+
+    .kj-item-navgator a {
+        width: 20px;
+        height: 1px;
+        display: block;
+        margin:0 0 80px 35px;
+        background-color: orange;
+    }
+
+    .kj-item-navgator a:last-child{
+        margin-bottom: 20px;
+    }
+
+    .kj-next-prev{
+        width: 100%;
+        height: 45px
+        display: block;
+    }
     
 
 }
@@ -275,7 +325,7 @@ codigo cor laranja: ff4800
      content: '';
      width: 0;
      height: 4px;
-     background-color: darkolivegreen;
+     background-color: orange;
      display: block;
      position: absolute;
      bottom: -6px;
@@ -331,6 +381,53 @@ codigo cor laranja: ff4800
     
 }
 
+/*-----BOTÕES-------*/
+
+.kj-btn{
+    display:inline-block;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.kj-btn-md{
+    height: 38px;
+    padding: 0 27px;
+    border-radius: 19px;
+    font-size: 14px;
+}
+
+.kj-btn-lg{
+    height: 45px;
+    padding: 0 35px;
+    border-radius: 23px;
+    font-size: 16px;
+}
+
+.kj-btn-orange{
+    background-color: orange;
+    color: black;
+}
+
+
+.kj-btn-orange:hover{
+    background-color: #151515;
+    color: orange;
+}
+
+.kj-btn-dark{
+    background-color: #151515;
+    color: orange;
+}
+
+.kj-btn-dark:hover{
+    background-color: rgb(215, 140, 0);
+    color: black;
+}
+
 /* CL ULT */
 
 .kj-title{
@@ -344,7 +441,7 @@ codigo cor laranja: ff4800
 }
 
 .kj-text-green{
-    color: darkolivegreen;
+    color: orange;
 }
 
 .kj-text-grey{
@@ -393,11 +490,16 @@ codigo cor laranja: ff4800
 
 .kj-full-height{
     height: 100vh;
-    border-bottom: 5px solid black;
+    position: relative;
+    
 }
 
 .kj-first-section{
     height:calc(100vh - 30px) ;
+}
+
+.kj-no-padding{
+    padding: 0 !important;
 }
 
 /* CL COMP */

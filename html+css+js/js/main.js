@@ -20,3 +20,17 @@ btncontact.addEventListener('click', function(){
  
  this.classList.toggle('kj-change-icon');
 })
+
+
+
+
+
+/* WAYPOINTS */
+var myScrollDown = document.querySelector('.kj-scrow-down');
+var waypoint = new Waypoint({
+    element: myScrollDown,
+    handler: function() {
+      myScrollDown.classList.toggle('kj-fade-out');
+    },
+    offset: '70%'
+  });
