@@ -226,7 +226,7 @@ codigo cor laranja: ff4800
         top: 25vh;
     }
 
-    .kj-item-counter{
+    .kj-navigator-counter{
         width: 100%;
         height: 90px;
         display: block;
@@ -234,19 +234,20 @@ codigo cor laranja: ff4800
         position: relative;
     }
 
-    .kj-item-counter:before{
+    .kj-navigator-counter:before{
         content: '';
         display: block;
         width: 35px;
         height: 100%;
         background-color: #1C1C1C;
         position: absolute;
-        top: 40px;
+        top: 30px;
+        left: -10px;
     }
 
-    .kj-item-counter span{
+    .kj-navigator-counter span{
         font-family: 'Open Sans', 'sans-serif';
-        font-size: 120px;
+        font-size: 90px;
         font-weight: 600;
     }
     
@@ -260,7 +261,11 @@ codigo cor laranja: ff4800
         width: 20px;
         height: 1px;
         display: block;
-        margin:0 0 80px 35px;
+        margin: 0 0 60px 20px;
+        background-color: orange;
+    }
+
+    .kj-item-navgator a.kj-item-active {
         background-color: orange;
     }
 
@@ -270,9 +275,60 @@ codigo cor laranja: ff4800
 
     .kj-next-prev{
         width: 100%;
-        height: 45px
-        display: block;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2c2c2c;
+        border-radius: 23px 23px 23px 23px;
+        cursor: pointer;
     }
+
+    .kj-next-prev > div{
+        height: 20px;
+    }
+
+    .kj-items-counter{
+        font-family: 'Open Sans',sans-serif;
+        color: #1c0c1c;
+        line-height: 25px;
+    }
+
+    .kj-items-counter span:nth-child(1){
+        color: orange;
+    }
+
+    .kj-next, .kj-prev{
+        color: orange;
+    }
+
+
+    ion-icon{
+        font-size: 25px;
+    }
+
+
+    .kj-slider-container{
+        display: block;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    .kj-slider-list{
+        width: auto;
+        height: 658px;
+        display: block;
+        background-color: deeppink;
+        list-style: none;
+    }
+
+    .kj-slider-item{
+        display: block;
+        height: 658px;
+        float: left;
+    }
+
+
     
 
 }
@@ -517,3 +573,22 @@ codigo cor laranja: ff4800
     animation: fadeOut 2s forwards ease-out;
 }
 
+.red{
+    background: red;
+}
+
+.green{
+    background: green;
+}
+
+.yellow{
+    background: yellow;
+}
+
+.purple{
+    background: purple;
+}
+
+.blue{
+    background: blue;
+}
