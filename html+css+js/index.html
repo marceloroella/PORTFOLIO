@@ -15,25 +15,31 @@
     <title>PORTFOLIO UX/UI DESGNER</title>
 </head>
 <body>
-    
+  <div class="kj-preloader">
+    <div class="kj-preloader-inner">
+        <img src="images/loader.svg" class="kj-mar-bottom-15" />
+        <p class="kj-text-light kj-mar-top-15">Aguarde um pouquinho … Estou preparando a limonada</p>
+    </div>
+</div>
 
     
 
-    <header class="kj-topbar">
-        <div class="kj-logo">
-         <img src="./images/logo.svg" alt="logo" />
-        </div>
-        <nav class="kj-menu">
-          <a href="#">HOME</a>
-          <a href="#">PROJETOS</a>
-          <a href="#">SOBRE</a>
-        </nav>
-    </header>
+<header class="kj-topbar">
+  <div class="kj-logo">
+      <img src="images/loader.svg" alt="Logo João Lemon UX/UI Designer" />
+  </div>
+
+  <nav class="kj-menu">
+      <a href="#">Home</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Sobre</a>
+  </nav>
+</header>
     
-    <div class="kj-contact-info">
+    <div class="kj-contact-info kj-text-grey">
         <h1 class="kj-title kj-text-green">Contato</h1>
-        <p class="kj-text-grey">email@gmail.com</p>
-        <p class="kj-text-grey">+55 13 981606565</p>
+        <p>email@gmail.com</p>
+        <p>+55 13 981606565</p>
         <div class="kj-SL">
             <a href="#" class="kj-social">
                 <img src="./images/icon-instagram.svg"/>
@@ -55,8 +61,8 @@
         <section class="kj-full-height kj-first-section" id="kj-home-prstntn">
             <div class="container-fluid" id="kj-container">
               <div class="row align-items-center" id="kj-container">
-                <div class="col-sm-12 col-md-3 offset-md-3 kj-display-text">
-                    <h1 class="kj-title-big kj-text-green">Olá!</h1>
+                <div class="col-sm-12 col-md-4 offset-md-2 kj-display-text">
+                    <h1 class="kj-title-xlarge kj-text-green">Olá!</h1>
                     <p class="kj-text-grey"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fuga saepe temporibus nesciunt nulla dicta ea porro! Officia recusandae reiciendis architecto dignissimos voluptates et commodi similique dolor sint reprehenderit? Ea, modi. Amet fuga quam sed magnam dolores repellat consequuntur expedita.</p>
                 </div>
               </div>
@@ -68,13 +74,13 @@
               </div>
             </div>
         </section>
-        <section class="kj-full-height" id="kj-home-portfolio">
+        <section class="kj-full-height " id="kj-home-portfolio">
             <div class="container-fluid kj-no-padding">
                 <div class="row">      
                   <div class="col-sm-2">
                     <div class="kj-portfolio-navigator">
                       <div class="kj-navigator-counter">
-                          <span class="kj-text-green">01</span>
+                          <span class="kj-text-green"><a>0</a>1</span>
                       </div>
                    <nav class="kj-item-navgator">
                     <a href="#" class="kj-item-active" data-nav ="1" ></a>
@@ -104,35 +110,116 @@
 
                      <div class="col-sm-10">
                         <div class="kj-slider-container kj-full-height">
-                            <ul class="kj-slider-list">
-                              <li class="kj-slider-item red">
+                            <ul class="kj-slider-list kj-full-height">
+                              <li class="kj-slider-item kj-slide-active" data-slide="1">
+                                <div class="row">
+                                  <div class="col-sm-5">
+                                    <div class="kj-portfolio-item-info kj-text-grey">
+                                      <h1 class="kj-title kj-title-large kj-mar-bottom-15">Startup IMPACT</h1>
+                                      <p class="kj-mar-bottom-15">Lorem ipsum dolor sit amet consectetur 
+                                        adipisicing elit. Repellat, quasi!</p>
+                                        <button class="kj-btn kj-btn-lg kj-btn-orange">Ver Projeto</button>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <div class="kj-portfolio-item-thumb">
+                                      <div class="kj-portfolio-item-box"></div>
+                                      <img src="images/shangchi.jpg" alt="STARTUP RCKETS" title="Startup Rockets" />
+                                    </div>
+                                  </div>
+                                </div>
 
                               </li>
-                              <li class="kj-slider-item yellow">
-                                
+                              <li class="kj-slider-item " data-slide="2">
+                                <div class="row">
+                                  <div class="col-sm-5">
+                                    <div class="kj-portfolio-item-info kj-text-grey">
+                                      <h1 class="kj-title kj-title-large kj-mar-bottom-15">Startup MARKET</h1>
+                                      <p class="kj-mar-bottom-15">Lorem ipsum dolor sit amet consectetur 
+                                        adipisicing elit. Repellat, quasi!</p>
+                                        <button class="kj-btn kj-btn-lg kj-btn-orange">Ver Projeto</button>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <div class="kj-portfolio-item-thumb">
+                                      <div class="kj-portfolio-item-box"></div>
+                                      <img src="images/thumb-2.jpg" alt="STARTUP RCKETS" title="Startup Rockets"  />
+                                    </div>
+                                  </div>
+                                </div>
                               </li>
-                              <li class="kj-slider-item blue">
-                                
+                              <li class="kj-slider-item" data-slide="3">
+                                <div class="row">
+                                  <div class="col-sm-5">
+                                    <div class="kj-portfolio-item-info kj-text-grey">
+                                      <h1 class="kj-title kj-title-large kj-mar-bottom-15">Startup ECOBIT</h1>
+                                      <p class="kj-mar-bottom-15">Lorem ipsum dolor sit amet consectetur 
+                                        adipisicing elit. Repellat, quasi!</p>
+                                        <button class="kj-btn kj-btn-lg kj-btn-orange">Ver Projeto</button>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <div class="kj-portfolio-item-thumb">
+                                      <div class="kj-portfolio-item-box"></div>
+                                      <img src="images/thumb-3.jpg" alt="STARTUP RCKETS" title="Startup Rockets"/>
+                                    </div>
+                                  </div>
+                                </div>
                               </li>
-                              <li class="kj-slider-item purple">
-                                
+                              <li class="kj-slider-item"data-slide="4">
+                                <div class="row">
+                                  <div class="col-sm-5">
+                                    <div class="kj-portfolio-item-info kj-text-grey">
+                                      <h1 class="kj-title kj-title-large kj-mar-bottom-15">Startup BootsLander</h1>
+                                      <p class="kj-mar-bottom-15">Lorem ipsum dolor sit amet consectetur 
+                                        adipisicing elit. Repellat, quasi!</p>
+                                        <button class="kj-btn kj-btn-lg kj-btn-orange">Ver Projeto</button>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <div class="kj-portfolio-item-thumb">
+                                      <div class="kj-portfolio-item-box"></div>
+                                      <img src="images/thumb-4.jpg" alt="STARTUP RCKETS" title="Startup Rockets"/>
+                                    </div>
+                                  </div>
+                                </div>
                               </li>
-                              <li class="kj-slider-item green">
-                                
+                              <li class="kj-slider-item"data-slide="5">
+                                <div class="row">
+                                  <div class="col-sm-5">
+                                    <div class="kj-portfolio-item-info kj-text-grey">
+                                      <h1 class="kj-title kj-title-large kj-mar-bottom-15">Startup IMPACT</h1>
+                                      <p class="kj-mar-bottom-15">Lorem ipsum dolor sit amet consectetur 
+                                        adipisicing elit. Repellat, quasi!</p>
+                                        <button class="kj-btn kj-btn-lg kj-btn-orange">Ver Projeto</button>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <div class="kj-portfolio-item-thumb">
+                                      <div class="kj-portfolio-item-box"></div>
+                                      <img src="images/thumb-5.jpg" alt="STARTUP RCKETS" title="Startup Rockets"/>
+                                    </div>
+                                  </div>
+                                </div>
                               </li>
                             </ul>
+                            
                         </div>
+                        
+
                      </div>
+
             </div>
 
             
 
             </div>
 
-
             </div> 
         </section>
     </div>
+
+    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/noframework.waypoints.min.js"></script>
