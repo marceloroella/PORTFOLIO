@@ -14,6 +14,7 @@
   var totalSlide = document.querySelector('.kj-total-slide');
   var currentCounter = 1
   var navItems = document.querySelectorAll('.kj-item-navgator a');
+  var navCounter = document.querySelector('.kj-navigator-counter span');
 
   //Larguras Ind.
   var containerWidth = sliderContainer.parentElement.offsetWidth;
@@ -49,7 +50,8 @@
    sliderPos -= containerWidth;
     anime({
       targets: sliderList,
-      translateX: sliderPos
+      translateX: sliderPos,
+      easing: 'cubicBezier(0,1.01,.32,1)'
     });
   }
 
@@ -62,7 +64,8 @@
        sliderPos += containerWidth;
         anime({
           targets: sliderList,
-          translateX: sliderPos
+          translateX: sliderPos,
+          easing: 'cubicBezier(0,1.01,.32,1)'
         });
       };
 
@@ -81,6 +84,7 @@
       if((currentCounter) >= 0  && (currentCounter < sliderTotalItems)){
         currentCounter++;
         currentSlide.innerHTML = counterFormater(currentCounter);
+        navCounter.innerHTML = counterFormater(currentCounter);
       }
       
       
@@ -92,6 +96,7 @@
     if((currentCounter) > 1  && (currentCounter <= sliderTotalItems)){
       currentCounter--;
       currentSlide.innerHTML = counterFormater(currentCounter);
+      navCounter.innerHTML = counterFormater(currentCounter);
     }
     
     
@@ -115,19 +120,48 @@ for(var nv = 0; nv < navItems.length; nv++){
 
 }
 
-var changeActive = function(){
-    for(var rm = 0; rm < navItems.length; rm++){
-        navItems[rm].classList.remove('kj-item-active')
 
+
+//SET ACTIVE SLIDE
+
+var setActiveSlide = function(){
+  
+  for(var sld = 0; sld < sliderItem.length; sld++){
+      let mySlideNum = parseInt(sliderItem[sld].getAttribute('data-slide'));
+
+      if(mySlideNum === currentCounter){
+          sliderItem[sld].classList.add('kj-slide-active');
+          sliderItem[sld].querySelector('.kj-portfolio-item-box').classList.add('kj-scale-right');
+  
+  
+          
+      }   
+    }
+  
+  }
+  
+  var changeActive = function(){
+      for(var rm = 0; rm < navItems.length; rm++){
+          navItems[rm].classList.remove('kj-item-active');
+  
         anime({
-            targets:  navItems[rm],
-            width: 20,
-          });
+          targets:navItems[rm],
+          width: 20
+        });
+      }
+
+      for(var rms = 0; rms < sliderItem.length; rms++){
+        sliderItem[rms].classList.remove('kj-slide-active');
+
+    
     }
 
-   setActiveNav();
-
-}
+      
+  
+     setActiveNav();
+     setActiveSlide();
+  
+  }
 
 
       //ACTIONS
@@ -152,3 +186,8 @@ var changeActive = function(){
       counterRemove();
       changeActive();
   });
+
+
+
+
+  
