@@ -88,7 +88,14 @@ codigo cor laranja: ff4800
     display: table;
     background-color: #1C1C1C;
     overflow: hidden;
+<<<<<<< HEAD
   
+=======
+    background-image: url(../images/shang-chi.png);
+    background-repeat: no-repeat;
+    background-position: 80% 5%;    
+    background-size: 35%;
+>>>>>>> 0e836bae0321216b2672204189ad9dacd889d785
 }
 .kj-preloader {
     width: 100%;
@@ -341,9 +348,12 @@ codigo cor laranja: ff4800
         height: 658px;
         float: left;
         margin-top: calc(26vh - 75px );
+<<<<<<< HEAD
     }
     .kj-portfolio-item{
         margin-bottom: 80px;
+=======
+>>>>>>> 0e836bae0321216b2672204189ad9dacd889d785
     }
 
     .kj-portfolio-item-info{
@@ -543,9 +553,12 @@ codigo cor laranja: ff4800
 .kj-bg-dark{
     background-color: #0000;
 }
+<<<<<<< HEAD
 .kj-bg-orange{
     background-color: orange;
 }
+=======
+>>>>>>> 0e836bae0321216b2672204189ad9dacd889d785
 
 .kj-title{
     font-family: 'Abril FatFace', serif;
