@@ -4,7 +4,7 @@
   //Vars slider
   var sliderContainer = document.querySelector('.kj-slider-container');
   var sliderList = document.querySelector('.kj-slider-list');
-  var sliderItem = document.querySelectorAll('.kj-slider-item');
+  var sliderItem = document.querySelectorAll('.kj-portfolio-item');
   const sliderTotalItems = sliderItem.length
   var sliderListWidth = null;
   var prevItem = document.querySelector('.kj-prev');
