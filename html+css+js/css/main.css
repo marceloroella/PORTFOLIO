@@ -166,7 +166,7 @@ body{
         height: 110px;
         display: block;
         background-color: transparent;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         z-index: 900;
@@ -282,7 +282,7 @@ body{
         position: relative;
     }
     .kj-page-wrapper img{
-        padding: 100px 12px 130px;
+        padding: 100px 12px 0;
         right: 100px;
         width: 35%;
         position: absolute;
@@ -455,7 +455,7 @@ body{
     }
     
     .kj-portfolio-list  .kj-portfolio-item {
-        margin-bottom: 100px;
+        margin-bottom: -100px;
     }
 
     .kj-slider-list  .kj-portfolio-item-info{
@@ -695,7 +695,7 @@ body{
 }
 
 .kj-btn-dark:hover {
-    background-color: rgb(175, 115, 4);
+    background-color: #1c1c1c;
     color: #fff;
 }
 
@@ -728,6 +728,9 @@ body{
 
 .kj-text-dark{
     color: #1c1c1c;
+}
+.kj-text-center{
+    text-align: center; 
 }
 
 .kj-bg-green {
@@ -781,6 +784,11 @@ body{
 }
 .kj-pad-left-15 {
     padding-left: 15px;
+}
+
+.kj-pad-top-100 {
+    padding-top: 80px;
+    margin-bottom: 10px;
 }
 
 
@@ -870,3 +878,15 @@ body{
     border-bottom-right-radius: 0;
 }
 
+.footer-dark{
+    height: auto;
+    background-color: #000;
+    display: table;
+    
+}
+
+.footer-dark img{
+    width: 100px;
+    left: 10px;
+    top: -30px;
+}
