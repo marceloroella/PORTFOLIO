@@ -32,7 +32,7 @@ var waypoint = new Waypoint({
     handler: function() {
       myScrollDown.classList.toggle('kj-fade-out');
     },
-    offset: '70%'
+    offset: '80%'
   });
 
 

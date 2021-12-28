@@ -103,6 +103,13 @@ body{
         display: table;
        
     }
+
+.kj-home{
+    background-image: url(../images/bg-home.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 51%;
+}
+
     .kj-preloader {
         display: flex;
         flex-direction: row;
@@ -218,6 +225,8 @@ body{
         right: 65px;
         z-index: 200;   
         display: none;   
+        border: #1c1c1c solid 2px;
+        box-shadow: 10px 10px 10px black;
     }
 
     .kj-contact-info-inner {
@@ -281,7 +290,7 @@ body{
     .kj-page-wrapper {
         position: relative;
     }
-    .kj-page-wrapper img{
+    #home-img{
         padding: 100px 12px 0;
         right: 100px;
         width: 35%;
@@ -295,7 +304,7 @@ body{
         background-color: orange;
         display: block;        
         position: absolute;
-        bottom: 0;
+        bottom: -30px;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -469,9 +478,7 @@ body{
        list-style: none;
    }
 
-   .kj-portfolio-list  .kj-portfolio-item-info {
-
-   }
+   
 
    .kj-slider-list  .kj-portfolio-item-thumb,  .kj-portfolio-list  .kj-portfolio-item-thumb{
        width: 100%;
@@ -501,11 +508,22 @@ body{
        max-width: 100%;
        height: auto;
        position: relative;
-       left: -20px;
-       top: -100px;
+       left: 40px;
+       top: -55px;
+       margin-bottom: 150px;
+       box-shadow: 60px 60px   #1c1c1c;
      
    }
 
+   .kj-conhecimentos-logos{
+       height: 400px; 
+       width: 1450px;
+   }
+
+   .kj-border-black{
+       border: black solid 4px;
+       border-radius: 10px;
+   }
 
 
     /*----PORTFOLIO----*/
@@ -514,6 +532,11 @@ body{
     }
 
 }
+   
+   /*----SOBRE----*/
+  
+   
+
 
 @media screen and (min-width: 576px){
     
@@ -615,6 +638,18 @@ body{
 
 }
 
+#perfil{
+    border: #4D4C4C solid 2px;
+    width: 300px;
+    height: 300px;
+    border-radius:100%;
+}
+
+.kj-sobre-itens{
+    height: 330px;
+    
+}
+
 @media screen and (min-width: 1200px){
     
 }
@@ -714,7 +749,7 @@ body{
     font-size: 120px;
 }
 
-.kj-text-green {
+.kj-text-orange {
     color: orange;
 }
 
@@ -732,12 +767,12 @@ body{
 .kj-text-center{
     text-align: center; 
 }
-
-.kj-bg-green {
-    background-color: orange;
+.kj-box-home{
+    background-color: rgba(16, 16, 16, 0.513);
 }
 
-.kj-bg-dark {
+
+.kj-bg-grey {
     background-color: #4D4C4C;
 }
 
@@ -751,6 +786,9 @@ body{
 
 .kj-bg-dark{
     background-color: #1c1c1c;
+}
+.kj-bg-black{
+    background-color: #000;
 }
 
 
@@ -791,6 +829,11 @@ body{
     margin-bottom: 10px;
 }
 
+.kj-pad-top-150 {
+    padding-top: 150px;
+    margin-bottom: 10px;
+}
+
 
 .kj-mar-30 {
     margin: 30px;
@@ -806,6 +849,26 @@ body{
 }
 .kj-mar-left-30 {
     margin-left: 30px;
+}
+
+.kj-mar-240 {
+    margin:240px;
+}
+.kj-mar-top-240 {
+    margin-top:240px;
+}
+.kj-mar-righ-t240 {
+    margin-right:240px;
+}
+.kj-mar-bottom-240 {
+    margin-bottom:240px;
+}
+.kj-mar-left-240 {
+    margin-left:240px;
+}
+
+.kj-mar-bottom-200 {
+    margin-bottom:100px;
 }
 
 .kj-pad-30 {
@@ -837,6 +900,17 @@ body{
     padding: 0 !important;
 }
 
+.footer-dark{
+    background-color: #000;
+    display: table;
+    
+}
+
+.footer-dark img{
+    width: 100px;
+    padding-top:60px;
+    position: absolute;
+}
 
 /* CLASSES COMPORTAMENTO */
 
@@ -878,15 +952,4 @@ body{
     border-bottom-right-radius: 0;
 }
 
-.footer-dark{
-    height: auto;
-    background-color: #000;
-    display: table;
-    
-}
 
-.footer-dark img{
-    width: 100px;
-    left: 10px;
-    top: -30px;
-}
